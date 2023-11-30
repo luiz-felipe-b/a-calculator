@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Digital7';
+  src: local('Digital7') url('./fonts/digital-7.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(194, 172, 140);
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.calculator {
+  height: 575px;
+  width: 400px;
+  background: rgb(48, 48, 48);
+  padding: 12px 20px 30px 20px; 
+  border-radius: 10px;
+  box-shadow: inset 0px -20px 1px rgb(43, 43, 43), 15px 10px 15px rgba(0, 0, 0, 0.432);
+}
+
+.calculator-label {
+  font-family: 'Nunito', sans-serif;
+  color: whitesmoke;
+}
+
+.display {
+  border: 0;
+  outline: 0;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Nunito', sans-serif;
+  color: rgb(42, 59, 39);
+  font-size: 48px;
+  text-align: right;
+
+  background: rgb(88, 117, 84);
+  box-shadow: 
+    inset 0px 7.5px 1px rgb(43, 43, 43);
+  width: 100%;
+  height: 125px;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.button{
+  border: 0;
+  outline: 0;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 24px;
+  background: rgb(63, 63, 63);
+  box-shadow: inset 0px -5px 1px rgb(43, 43, 43);
+  margin: 5px;
+  width: 80px;
+  height: 60px;
+  border-radius: 10px;
+  padding-bottom: 7px;
+  cursor: pointer;
+}
+
+.button:active {
+  background: rgb(43, 43, 43);
+  box-shadow: inset 0px 5px 1px rgb(63, 63, 63), inset 0px -5px 1px rgb(48, 48, 48);
+}
+
+.equals {
+  width: 170px;
+}
